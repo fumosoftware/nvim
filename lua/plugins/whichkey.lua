@@ -9,17 +9,21 @@ return {
 
   config = function()
 	  local wk = require("which-key")
-	  -- Telescope Key Bindings
+	  -- FzfLua Key Bindings
 	  wk.add({
 		  { "<leader>f", group = "Find" }, -- group
-		  { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "(Telescope) Find File", mode = "n" },
-		  { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "(Telescope) Grep", mode = "n" },
-		  { "<leader>ft", "<cmd>Telescope help_tags<cr>", desc = "(Telescope) Help Tags", mode = "n" },
+		  { "<leader>ff", "<cmd>FzfLua files<cr>", desc = "(Fzf) Find File", mode = "n" },
+		  { "<leader>fg", "<cmd>FzfLua live_grep<cr>", desc = "(Fzf) Live Grep", mode = "n" },
+		  { "<leader>ft", "<cmd>FzfLua tags<cr>", desc = "(Fzf)Tags", mode = "n" },
 
 	  })
 
 	  wk.add({
-		  { "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Buffers", mode = "n" },
+		  { "<leader>b", "<cmd>FzfLua buffers<cr>", desc = "Buffers", mode = "n" },
+	  })
+
+	  wk.add({
+		  { "<leader>L", "<cmd>Lazy<cr>", desc = "Lazy", mode = "n" },
 	  })
   end,
 }

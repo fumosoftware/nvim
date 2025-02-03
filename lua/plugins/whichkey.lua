@@ -25,5 +25,9 @@ return {
 	  wk.add({
 		  { "<leader>L", "<cmd>Lazy<cr>", desc = "Lazy", mode = "n" },
 	  })
+
+	  wk.add({
+		  { "<leader>z", function() require("zen-mode").toggle( { window = { width = .85 } } ) end, desc = "Zen", mode = "n" },
+	  })
   end,
 }

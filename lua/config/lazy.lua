@@ -20,6 +20,12 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     {
+		"catppuccin/nvim", name = "catppuccin", priority = 1000,
+		config = function()
+			vim.cmd.colorscheme "catppuccin"
+		end,
+    },
+    {
       "folke/lazydev.nvim",
       ft = "lua", -- only load on lua files
       opts = {

@@ -19,6 +19,10 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- import your plugins
+    {
+    	"williamboman/mason.nvim",
+	opts = {},
+    },
     { import = "plugins" },
   },
   -- Configure any other settings here. See the documentation for more details.

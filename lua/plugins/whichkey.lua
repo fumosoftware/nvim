@@ -44,5 +44,21 @@ return {
 	  wk.add({
 		  { "<leader>\\", "<cmd>Neotree filesystem toggle right<cr>", desc = "File Tree", mode = "n" } ,
 	  })
+
+	  wk.add({
+		  { "<leader>l", group = "LSP" },
+		  { "<leader>l?", "<cmd>LspInfo<cr>", desc = "LSP Info", mode = "n" },
+		  { "<leader>ll", "<cmd>LspLog<cr>", desc = "LSP Log", mode = "n" },
+		  { "<leader>lr", "<cmd>LspRestart<cr>", desc = "LSP Restart", mode = "n" },
+		  { "<leader>li", "<cmd>Mason<cr>", desc = "LSP Install", mode = "n" },
+		  { "<leader>lu", "<cmd>Mason<cr>", desc = "LSP Uninstall", mode = "n" },
+		  { "<leader>ls", "<cmd>LspStart<cr>", desc = "LSP Start", mode = "n" },
+		  { "<leader>lx", "<cmd>LspStop<cr>", desc = "LSP Stop", mode = "n" },
+	  })
+
+	  wk.add({
+		  { "<leader>p", "<cmd>OverseerRun<cr>", desc = "Task Runner", mode = "n" } ,
+	  })
+
   end,
 }
